@@ -2,24 +2,17 @@
   <div id="app">
     <img src="./assets/logo.png">
     <div>
-      <router-link :to="{name: 'Home'}" tag="li">
-        <div>home</div>
+      <router-link :to="{name: 'Main'}" tag="li" exact>
+        <div>main</div>
       </router-link>
-      <router-link :to="{name: 'Cart'}" tag="li">
-        <div>cart</div>
-      </router-link>
-      <router-link :to="{name: 'Explorer'}" tag="li">
-        <div>explorer</div>
-      </router-link>
-      <router-link :to="{name: 'Me'}" tag="li">
-        <div>me</div>
+      <router-link :to="{name: 'BookDetail', params:{id: 1}}" tag="li" exact>
+        <div>bookDetail</div>
       </router-link>
     </div>
     <div class="content">
-      <p>this is content</p>
+      <p>列表是子菜单</p>
       <router-view></router-view>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -40,5 +33,8 @@ export default {
 }
 li {
   list-style: none;
+}
+.active {
+  background-color: aqua;
 }
 </style>
