@@ -5,7 +5,7 @@
         <div class="more">更多...</div>
       </div>
       <div class="book-items">
-        <div class="book" v-for="book in books" v-bind:key="book.id">
+        <div class="book" v-for="book in books" v-bind:key="book.id" @click="$emit('onBookSelect',book)">
           <div class="cover">
             <img v-bind:src="book.img_url"/>
           </div>
@@ -33,5 +33,8 @@ export default {
 </script>
 
 <style scoped>
-
+.book .cover img {
+  width: 100px;
+  height: 100px;
+}
 </style>

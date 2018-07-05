@@ -1,0 +1,15 @@
+{
+  "announcement": "今日上架的图书全部8折",
+  "latestUpdated": [{
+    "id": 1,
+    "title": "该睡觉了吧",
+    "authors": ["good", "night"],
+    "img_url": "/static/common.jpg"
+  }],
+  "recommended": [{
+    "id": 1,
+    "title": "该睡觉了吧",
+    "authors": ["good", "night"],
+    "img_url": "/static/common.jpg"
+  }]
+}
